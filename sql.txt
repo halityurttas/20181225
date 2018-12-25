@@ -1,0 +1,23 @@
+USE [data1_db]
+GO
+
+/****** Object:  Table [dbo].[arabalar]    Script Date: 25.12.2018 17:10:49 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[arabalar](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[marka] [nvarchar](50) NULL,
+	[model] [nvarchar](50) NULL,
+	[yas] [int] NULL,
+ CONSTRAINT [PK_arabalar] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
